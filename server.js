@@ -24,6 +24,6 @@ app.use(postsRoutes);
 app.use(profileRoutes);
 app.use(commentRoutes);
 
-app.listen(8080,()=>{
+app.listen(process.env.PORT,process.env.IP,()=>{
     
 })
