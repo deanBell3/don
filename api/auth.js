@@ -29,7 +29,7 @@ const strategy= new jwtStrategy(opts,(payload,next)=>{
 passport.use(strategy);
 
 router.get('/',(req,res)=>{
-    knex.select('*').from('off_users').then(data=>res.send(data)).catch(err=> res.send(err));
+   res.send('Welcome to Off')
 });
 
 router.post('/register',(req,res)=>{
